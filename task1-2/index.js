@@ -5,7 +5,7 @@ function task_one_inner_array(arr){
     }
     for(let i = 0; i < arr.length; i++){
         if (Array.isArray(arr[i])){
-            const innerSum = task_one_inner_arrays(arr[i]);
+            const innerSum = task_one_inner_array(arr[i]);
             if(!isNaN(innerSum)) { // check if innerSum is a valid number
               suma += innerSum;
             }
@@ -17,8 +17,10 @@ function task_one_inner_array(arr){
     return suma;
   }
  
-console.log(task_one_inner_arrays2([1,[2,[4,[5],[6]],3]]))
-console.log(task_one_inner_arrays2([[[[[[]][[]]]]]]))
+console.log("console.log(task_one_inner_array([1,[2,[4,[5],[6]],3]]))")
+console.log(task_one_inner_array([1,[2,[4,[5],[6]],3]]))
+console.log("console.log(task_one_inner_array([[[[[[]][[]]]]]]))")
+console.log(task_one_inner_array([[[[[[]][[]]]]]]))
  
  
 function task_two_subarrays(arr, sub_size){
@@ -38,9 +40,13 @@ function task_two_subarrays(arr, sub_size){
  
     return array_of_subarrays;
 }
- 
+
+console.log("console.log(task_two_subarrays([1,2,3,4,5,6,7], 7))") 
 console.log(task_two_subarrays([1,2,3,4,5,6,7], 7))
+console.log("console.log(task_two_subarrays([1,2,3,4,5,6,7], 13))") 
 console.log(task_two_subarrays([1,2,3,4,5,6,7], 13))
+console.log("console.log(task_two_subarrays([],10))") 
 console.log(task_two_subarrays([],10))
+console.log("console.log(task_two_subarrays([1,2,3], -3))") 
 console.log(task_two_subarrays([1,2,3], -3))
  
