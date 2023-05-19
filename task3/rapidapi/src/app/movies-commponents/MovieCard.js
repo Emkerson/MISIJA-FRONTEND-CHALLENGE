@@ -20,12 +20,14 @@ const MovieCard = (props) => {
             />
             <HeadingElement heading={movie.titleText.text}/>
             <HeadingElement heading={movie.primaryImage ? movie.primaryImage.caption.plainText : ""} />
-            
-            <p> 
-                {movie.releaseDate.day ? movie.releaseDate.day : "?"}. 
-                {movie.releaseDate.month ? movie.releaseDate.month : "?"}.
-                {movie.releaseDate.year ? movie.releaseDate.year : "?"}.
-            </p>
+            <div> 
+                {movie.releaseDate ? movie.releaseDate.day : "?"}. 
+                {movie.releaseDate ? movie.releaseDate.month : "?"}.
+                {movie.releaseDate ? movie.releaseDate.year : "?"}.
+            </div>
+            <div>
+              
+            </div>
           </div>
         );
       })}
