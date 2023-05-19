@@ -7,7 +7,7 @@ import MovieCard from './MovieCard';
 const MovieList = () =>{
     //search movies by name
     const [movies, setMovies] = useState([])
-    const [searchValue, setSearchValue] = useState('Spiderman')
+    const [searchValue, setSearchValue] = useState('Batman')
     const getMovieRequest = async ()=> {
         const url = `https://moviesdatabase.p.rapidapi.com/titles/search/title/${searchValue}?exact=true`;
         const options = {
